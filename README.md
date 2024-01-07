@@ -1,2 +1,1 @@
-# Challenge--5---Build-a-Personal-Portfolio-Webpage
- About FCC - Responsive Web Design - Challenge #5
+Project created in order to complete the Challenge #5 of the freeCodeCamp Responsive Web Design certification.
