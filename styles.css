@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: #44619c;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  height: 100%;
+}
+
+nav ul li {
+  padding: 19px 35px;
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  height: 100%;
+}
+
+a { /* Combined a:visited, a:active, and a:hover */
+  color: #f5f6f7;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #9c3627;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #424242, #272829);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: Calibri;
+  letter-spacing: 1px;
+}
+
+.welcome p {
+  color: #9c3627;
+  font-family: Calibri;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects-main {
+  background-color: #9c3627;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  font-family: Calibri;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.projects div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #272829;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.projects img {
+  height: auto;
+  width: 200px;
+  border-radius: 20px;
+}
+
+#contact-area {
+  height: 70vh;
+  width: 100%;
+  background-color: #272829;
+  display: flex;
+  flex-direction: column;
+  font-family: Calibri;
+}
+
+.contact-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.contact-copy h2 {
+  font-size: 60px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contact-copy p {
+  color: #9c3627;
+  font-family: Calibri;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  text-transform: lowercase;
+  color: white;
+}
+
+.icons a {
+  color: white;
+  padding: 0 25px;
+}
+
+.icons a:hover {
+  color: #44619c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #272829;
+	border-top: 4px solid #9c3627;
+	padding: 25px;
+	height: 20vh;
+	width: 100%;
+	color: white;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+footer p {
+	padding: 10px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+	* { 
+		scroll-behavior: smooth;
+	}
+}

@@ -1,0 +1,255 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width= device-width, initial-scale= 1.0">
+		<title>Personal Portfolio #5</title>
+		<link rel="stylesheet" href='styles.css'>
+		<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css'>
+	</head>
+	<body>
+			<nav id="navbar">
+				<ul class="navbar">
+					<li><a href='https://www.freecodecamp.org/gustavo_a' target="_blank">About</a></li>
+					<li><a href='#projects'>Work</a></li>
+					<li><a href='#contact-area'>Contact</a></li>
+				</ul>
+			</nav>
+		
+		<main>
+			<section id="welcome-section" class="welcome">
+					<h1>Hey I am Gustavo</h1>
+					<p>the best web developer you ever going to meet</p>				
+			</section>
+				
+			<section id="projects" class="projects-main">
+				<h2>My Stuff</h2>
+				<div class="projects">
+					<a href="https://www.webseando.com/"><div class="webpage" target="_blank"><img src='https://www.webseando.com/wp-content/uploads/2023/05/webseando-logo-1-300x78.png'><label class="project-tile">My Business Webpage</label></div></a>
+					<a href="https://www.freecodecamp.org/gustavo_a" id="profile-link" target="_blank"><div class="fcc-profile"><img src='https://www.webseando.com/wp-content/uploads/2023/09/FCC-Profile-Challege-5-300x285.jpg'><label class="project-tile">My FCC Profile</label></div></a>
+					<a href="https://www.linkedin.com/in/gustavo-adolfo-ortega-alfonzo/" target="_blank"><div class="linkedin"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png?20140125013055'><label class="project-tile">LinkedIn Profile</label></div></a>
+				</div>
+			</section>
+		
+			<section id="contact-area">
+					<div class="contact-copy">
+					<h2>Let's build something awesome together!</h2>
+					<p>Do you prefer coffee of tea?</p>
+					</div>
+					
+					<div class="icons">
+						<a href='https://www.instagram.com/webseando/' target="_blank"><i class="fab fa-instagram">  instagram</i></a>
+						<a href='tel:555-555-5555'><i class="fab fa-whatsapp" target="_blank">  whatsapp</i></a>
+						<a href='https://github.com/Foozl3r'><i class="fab fa-github" target="_blank">  github</i></a>
+					</div>		
+			</section>
+		</main>
+		
+		<footer id="footer">
+			<p>Thanks for the training on Responsive Web Design freeCodeCamp. JavaScript, I am coming for you now!</p>
+			<p><span><i class="far fa-copyright"></i></span> Created by <a href='https://www.freecodecamp.org/gustavo_a' target="_blank">gustavo_a</a> for <a href='https://www.freecodecamp.org' target="_blank">freeCodeCamp</a></p>
+		</footer>
+	</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: block;
+	width: 100%;
+	height: 70px;
+	background-color: #44619c;
+	position: fixed;
+}
+
+nav ul {
+	display: flex;
+	position: relative;
+	justify-content: right;	
+	height: 100%;
+}
+
+nav ul li {
+	padding: 19px 35px;
+	list-style: none;
+	font-size: 22px;
+	font-weight: bold;
+	height: 100%;
+}
+
+a:visited {
+	color: #f5f6f7;
+}
+
+a:active {
+	color: #f5f6f7;
+}
+
+nav ul a {
+	color: #f5f6f7;
+	text-decoration: none;	
+}
+
+nav ul li:hover {
+	background: #9c3627;
+}
+
+.welcome {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(45deg, #424242, #272829);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 70px;
+	font-family: Calibri;
+	letter-spacing: 1px;
+
+}
+
+.welcome p {
+	color: #9c3627;
+	font-family: Calibri;
+	font-size: 35px;
+	letter-spacing: 1px;
+
+}
+
+.projects {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+} 
+
+.projects-main {
+	background-color: #9c3627;
+	display: flex;
+	flex-direction: column;
+	height: 100vh
+}
+
+h2 { 
+	color: white;
+	font-size: 50px;
+	font-family: Calibri;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 50px 0 ;
+	}
+
+.projects div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #272829;
+	height: 300px;
+	width: 250px;
+	border-radius: 20px;
+}
+
+.projects img {
+	height: auto;
+	width: 200px;
+	border-radius: 20px;
+}
+
+#contact-area {
+	height: 70vh;
+	width: 100%;
+	background-color: #272829;
+	display: flex;
+	flex-direction: column;
+	font-family: Calibri;
+}
+
+.contact-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.contact-copy h2 {
+	font-size: 60px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+.contact-copy p {
+	color: #9c3627;
+	font-family: Calibri;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-transform: lowercase;
+	color: white;
+}
+
+.icons a {
+	color: white;
+	padding: 0 25px;
+}
+
+.icons a:visited {
+	color: white;
+}
+
+.icons a:active {
+	color: white;
+}
+
+.icons a:hover {
+	color: #44619c;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #272829;
+	border-top: 4px solid #9c3627;
+	padding: 25px;
+	height: 20vh;
+	width: 100%;
+	color: white;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+footer p {
+	padding: 10px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+	* { 
+		scroll-behavior: smooth;
+	}
+}
+
+** end of undefined **
+
